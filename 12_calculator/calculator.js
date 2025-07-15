@@ -1,16 +1,36 @@
-const add = function() {
+const add = function(a, b) {
+  return a + b;
+};
+
+const subtract = function(a, b) {
+  return a - b;
+};
+
+const sum = function(numArray) {
+  if (numArray.length == 0)
+     return 0;
+
+  let tally = 0;
+  numArray.forEach(addArray)
+
+  function addArray(value){
+    tally += value;
+  }
+
+  return tally;
 	
 };
 
-const subtract = function() {
-	
-};
+const multiply = function(numArray) {
+  let tally = 1;
 
-const sum = function() {
-	
-};
+  numArray.forEach(multArray)
 
-const multiply = function() {
+  function multArray(value) {
+    tally *= value;
+  }
+
+  return tally;
 
 };
 
