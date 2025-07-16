@@ -34,11 +34,25 @@ const multiply = function(numArray) {
 
 };
 
-const power = function() {
+const power = function(a, b) {
+  let tally = a;
+
+  for (let i=b-1; i>0; i--){
+    tally *= a;
+  }
+  
+  return tally;
 	
 };
 
-const factorial = function() {
+const factorial = function(a) {
+  tally = 1
+
+  for (let i = a; i > 0; i--){
+    tally *= i
+  }
+
+  return tally;
 	
 };
 
